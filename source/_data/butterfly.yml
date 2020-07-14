@@ -8,18 +8,18 @@
 
 menu:
   首页: / || fas fa-home
-  Archives: /archives/ || fas fa-archive
+  时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
-  专栏: /categories/ || fas fa-folder-open
-  List||fas fa-list:
+  分类: /categories/ || fas fa-folder-open
+  清单||fas fa-list:
     - Music || /music/ || fas fa-music
     - Movie || /movies/ || fas fa-video
-  Link: /link/ || fas fa-link
+  友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
-
+# 代码高亮
 highlight_theme: mac # default / darker / pale night / light / ocean / mac / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
@@ -87,13 +87,13 @@ favicon: /img/favicon.png
 # Avatar (頭像)
 avatar:
   img: /img/avatar.png
-  effect: false
+  effect: true
 
 # the banner image of home page
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: 
 
 # the banner image of archive page
 archive_img:
@@ -124,6 +124,7 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover: 
     - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -138,9 +139,9 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: updated # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     categories: true # true or false 文章頁是否顯示分類
@@ -158,7 +159,7 @@ wordcount:
 # 2: both (if the description exists, it will show description. or show the auto_excerpt)
 # 3: auto_excerpt (default)
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # Post
@@ -178,16 +179,17 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    - img: /img/wechat.jpg
+    - img: /imgs/AliPayQR.jpg
       link:
       text: wechat
-    - img: /img/alipay.jpg
+    - img: /imgs/AliPayQR.jpg
       link:
       text: alipay
 
 # Related Articles
+# 相关推荐
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
@@ -198,6 +200,7 @@ photofigcaption: false
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
+# 文章锚点
 anchor: false
 
 # Share System (分享功能)
@@ -617,9 +620,9 @@ runtimeshow:
 translate:
   enable: true
   # The text of a button
-  default: 繁
+  default: 簡
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 2
+  defaultEncoding: 1
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese

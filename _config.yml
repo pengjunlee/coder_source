@@ -97,11 +97,16 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
+search:
+  path: search.xml # file path. By default is search.xml
+  field: post # post page all
+  content: false # whether contains the whole content of each article
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: 
-    github: git@github.com:pengjunlee/coder.github.io.git
-    # github: https://github.com/pengjunlee/coder.github.io.git
+    github: git@github.com:pengjunlee/mtracy_note.github.io.git
+    # github: https://github.com/pengjunlee/mtracy_note.github.io.git
   branch: master

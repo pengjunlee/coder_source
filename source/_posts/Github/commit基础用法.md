@@ -21,7 +21,7 @@ aplayer:
 highlight_shrink: false
 top: false
 ---
-> 转载自：<https://www.cnblogs.com/qianqiannian/p/6005628.html>
+> 原文传送门：<https://www.cnblogs.com/qianqiannian/p/6005628.html>
 
 git commit 主要是将暂存区里的改动给提交到本地的版本库。每次使用git commit 命令我们都会在本地版本库生成一个40位的哈希值，这个哈希值也叫commit-id，commit-id在版本回退的时候是非常有用的，它相当于一个快照,可以在未来的任何时候通过与git reset的组合命令回到这里。
 ```Bash
